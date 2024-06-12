@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem; 
+}
+svg {
+    width: 1.5rem;
+}
+
+.conteneur_principal {
+    max-width: 600px;
+    min-width: 300px;
+    border: 2px solid rgb(19, 16, 1);
+    background-color: rgba(228, 229, 230, 0.897);
+}
+
+/* autres boutons */
+.firs_top_container {
+    display: flex;
+    justify-content: space-between;
+    margin: .4rem;
+}
+.top_container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1.2rem;
+}
+
+.top_container>div:first-child {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-inline: 0.3rem;
+    font-size: 1.5rem;
+}
+
+/* output */
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-inline: .5rem;
+}
+
+.input {
+    margin-top: 1rem;
+}
+
+/* Tous les boutons differents des boutons M. */
+button:not(.other_btn button) {
+    height: 3rem;
+}
+button:not(.other_btn):hover {
+    background-color: rgba(19, 16, 1, 0.253);
+}
+
+.other_btn {
+    display: flex;
+}
+.other_btn button {
+    flex-grow: 1;
+}
+
+.action_btn {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, 1fr);
+}
+.action_btn button {
+    flex-grow: 1;
+    border: 1px solid rgba(206, 206, 207, 0.842);
+
+}
+button.number {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: white;
+    border: 1.5px solid rgba(237, 239, 241, 0.842);
+}
+button.operator, .other, #equal {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+button.operator:hover, #equal:hover {
+    background-color: rgba(0, 132, 255, 0.877);
+    color: white;
+}
+
